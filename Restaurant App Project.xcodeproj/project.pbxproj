@@ -1,0 +1,67 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXGroup section */
+		C20C66051AFCFBB900C39ECD = {
+			isa = PBXGroup;
+			children = (
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		C20C66061AFCFBB900C39ECD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+			};
+			buildConfigurationList = C20C66091AFCFBB900C39ECD /* Build configuration list for PBXProject "Restaurant App Project" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C20C66051AFCFBB900C39ECD;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		C20C660A1AFCFBB900C39ECD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		C20C660B1AFCFBB900C39ECD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C20C66091AFCFBB900C39ECD /* Build configuration list for PBXProject "Restaurant App Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C20C660A1AFCFBB900C39ECD /* Debug */,
+				C20C660B1AFCFBB900C39ECD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C20C66061AFCFBB900C39ECD /* Project object */;
+}
