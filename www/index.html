@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+        <link rel="stylesheet" href="http://andymatthews.net/code/jquery-mobile-icon-pack/dist/jqm-icon-pack-fa.css"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Restaurat Application</title>
+    </head>
+    <body>
+
+<!-- Preloader -->
+<div data-role="page" id="loader">
+    <div role="main" class="ui-content no-header" style="overflow:hidden;">
+
+				<div style="width:40%; margin:auto; margin-top:20% !important;text-algin:center !important;">
+
+				<!-- SPINNER #2 -->
+				<svg version="1.1" 
+					class="svg-loader" 
+					xmlns="http://www.w3.org/2000/svg" 
+					xmlns:xlink="http://www.w3.org/1999/xlink" 
+					x="0px"
+					y="0px" 
+					viewBox="0 0 80 80" 
+					xml:space="preserve">
+
+				<path 
+					fill="#ccc" 
+					d="M10,40c0,0,0-0.4,0-1.1c0-0.3,0-0.8,0-1.3c0-0.3,0-0.5,0-0.8c0-0.3,0.1-0.6,0.1-0.9c0.1-0.6,0.1-1.4,0.2-2.1
+					c0.2-0.8,0.3-1.6,0.5-2.5c0.2-0.9,0.6-1.8,0.8-2.8c0.3-1,0.8-1.9,1.2-3c0.5-1,1.1-2,1.7-3.1c0.7-1,1.4-2.1,2.2-3.1
+					c1.6-2.1,3.7-3.9,6-5.6c2.3-1.7,5-3,7.9-4.1c0.7-0.2,1.5-0.4,2.2-0.7c0.7-0.3,1.5-0.3,2.3-0.5c0.8-0.2,1.5-0.3,2.3-0.4l1.2-0.1
+					l0.6-0.1l0.3,0l0.1,0l0.1,0l0,0c0.1,0-0.1,0,0.1,0c1.5,0,2.9-0.1,4.5,0.2c0.8,0.1,1.6,0.1,2.4,0.3c0.8,0.2,1.5,0.3,2.3,0.5
+					c3,0.8,5.9,2,8.5,3.6c2.6,1.6,4.9,3.4,6.8,5.4c1,1,1.8,2.1,2.7,3.1c0.8,1.1,1.5,2.1,2.1,3.2c0.6,1.1,1.2,2.1,1.6,3.1
+					c0.4,1,0.9,2,1.2,3c0.3,1,0.6,1.9,0.8,2.7c0.2,0.9,0.3,1.6,0.5,2.4c0.1,0.4,0.1,0.7,0.2,1c0,0.3,0.1,0.6,0.1,0.9
+					c0.1,0.6,0.1,1,0.1,1.4C74,39.6,74,40,74,40c0.2,2.2-1.5,4.1-3.7,4.3s-4.1-1.5-4.3-3.7c0-0.1,0-0.2,0-0.3l0-0.4c0,0,0-0.3,0-0.9
+					c0-0.3,0-0.7,0-1.1c0-0.2,0-0.5,0-0.7c0-0.2-0.1-0.5-0.1-0.8c-0.1-0.6-0.1-1.2-0.2-1.9c-0.1-0.7-0.3-1.4-0.4-2.2
+					c-0.2-0.8-0.5-1.6-0.7-2.4c-0.3-0.8-0.7-1.7-1.1-2.6c-0.5-0.9-0.9-1.8-1.5-2.7c-0.6-0.9-1.2-1.8-1.9-2.7c-1.4-1.8-3.2-3.4-5.2-4.9
+					c-2-1.5-4.4-2.7-6.9-3.6c-0.6-0.2-1.3-0.4-1.9-0.6c-0.7-0.2-1.3-0.3-1.9-0.4c-1.2-0.3-2.8-0.4-4.2-0.5l-2,0c-0.7,0-1.4,0.1-2.1,0.1
+					c-0.7,0.1-1.4,0.1-2,0.3c-0.7,0.1-1.3,0.3-2,0.4c-2.6,0.7-5.2,1.7-7.5,3.1c-2.2,1.4-4.3,2.9-6,4.7c-0.9,0.8-1.6,1.8-2.4,2.7
+					c-0.7,0.9-1.3,1.9-1.9,2.8c-0.5,1-1,1.9-1.4,2.8c-0.4,0.9-0.8,1.8-1,2.6c-0.3,0.9-0.5,1.6-0.7,2.4c-0.2,0.7-0.3,1.4-0.4,2.1
+					c-0.1,0.3-0.1,0.6-0.2,0.9c0,0.3-0.1,0.6-0.1,0.8c0,0.5-0.1,0.9-0.1,1.3C10,39.6,10,40,10,40z"
+					>
+
+					<animateTransform
+						attributeType="xml"
+						attributeName="transform"
+						type="rotate"
+						from="0 40 40"
+						to="360 40 40"
+						dur="0.6s"
+						repeatCount="indefinite"
+					/>
+				</path>
+				</svg>
+                <span style="color:lightgray;text-algin:center;">&nbsp;Loading resources</span>
+				</div>
+		
+		
+    </div><!-- /content -->
+
+
+</div>
+
+
+<!-- Start of first page: #one -->
+<div data-role="page" id="one">
+
+
+
+    <div role="main" class="ui-content no-header" style="background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(img/backlogin.jpg);background-size:cover;background-position:center;text-align:center;">
+        <div style="padding:30px;">
+        <br/>
+        <img src="img/logo-template111.png" />  
+        <br/>
+        <h1 style="color:white;font-size:2em;font-weight:200;">Login</h1>
+            <input type="text" name="text-basic" id="text-basic" value="" placeholder="User" />
+            <input type="password" name="password" id="password" value="" autocomplete="off" placeholder="Password" /><br/>
+
+            <a href="#two" class="ui-shadow ui-btn ui-corner-all ui-btn-inline">Intra</a>&nbsp;<a href="#two" data-role="button" data-icon="facebook" class="ui-link ui-btn ui-icon-facebook ui-btn-icon-left ui-shadow ui-corner-all ui-btn-active ui-btn-inline" role="button">Login with facebook</a>
+        </div>
+    </div><!-- /content -->
+
+
+</div><!-- /page two -->
+
+
+<div data-role="page" id="two">
+
+
+    <div role="main" class="ui-content no-header" style="background-image:url(img/backlogin.jpg);background-size:cover;background-position:center;text-align:center;">
+        <Br/>
+           <img src="img/logo-template111.png" alt="" width="35%" /><br /><br />
+<div class='square-box' style="float:left;"><a href="#tree">
+    <div class='square-content'><br /><img src="img/open207.png" width="50%" alt="" style="opacity:0.5;"/><br /><br /><span>Meniu</span></div></a>
+</div>
+<div class='square-box' style="float:right;"><a href="#five">
+     <div class='square-content'><br /><img src="img/line8.png" width="50%" alt=""  style="opacity:0.5;"/><br /><br /><span>Comanda ta</span></div></a>
+</div>
+<div class='square-box' style="float:left;"><a href="#chelner" data-rel="dialog" data-transition="pop">
+     <div class='square-content'><br /><img src="img/food58.png" width="50%" alt=""  style="opacity:0.5;"/><br /><br /><span>Cheama un ospatar</span></div></a>
+</div>
+<div class='square-box' style="float:right;"><a href="#cndp" data-rel="dialog" data-transition="pop">
+     <div class='square-content'><br /><img src="img/currency2.png" width="50%" alt=""  style="opacity:0.5;"/><br /><br /><span>Solicita nota</span></div></a>
+</div>
+           
+    </div><!-- /content -->
+
+
+</div><!-- /page two -->
+
+
+<!-- Start of first page: #tree -->
+<div data-role="page" id="tree">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+
+	
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Meniu</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a>   
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content ok-content">
+        <a href="#six"><div class="section-box" style="background-image:url(img/food.jpg);"></div></a>
+        <a href="#four"><div class="section-box" style="background-image:url(img/drinks.jpg);"></div></a>       
+    </div><!-- /content -->
+
+
+</div><!-- /page tree -->
+
+<!-- Start of first page: #four -->
+<div data-role="page" id="four">
+
+    <div data-role="header" data-position="" class="header-box"> 
+			
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Bauturi</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content" style="padding:1em;">
+
+<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-collapsed="false">
+    <h4>Bere</h4>
+            <div class="list-item-box">
+                <div style="float:clear;">
+                    <a href="#ursus" class="list-item-link" style=""><label for="spin"><img src="img/beer/ursus_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">Ursus Premium</span><br/>Pret: <span class="pret-prod">6</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div>
+            <div class="list-item-box">
+                <div style="float:clear;">
+                    <a href="#stela" class="list-item-link"><label for="spin"><img src="img/beer/stela_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">Stela Artois</span><br/>Pret: <span class="pret-prod">9</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div>            
+            <div class="list-item-box">
+                <div style="float:clear;">
+                    <a href="#timisoreana" class="list-item-link"><label for="spin"><img src="img/beer/timisoreana_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">Timisoreana</span><br/>Pret: <span class="pret-prod">5</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div> 
+			<div class="list-item-box-last">
+                <div style="float:clear;">
+                    <a href="#heineken" class="list-item-link"><label for="spin"><img src="img/beer/heineken_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">Heineken</span><br/>Pret: <span class="pret-prod">10</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div> 			
+</div>
+<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right">
+    <h4>Racoritoare</h4>
+            <div class="list-item-box">
+                <div style="float:clear;">
+                    <a href="#cola" class="list-item-link"><label for="spin"><img src="img/softdrinks/cola_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">Coca Cola</span><br/>Pret: <span class="pret-prod">7</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div>
+            <div class="list-item-box">
+                <div style="float:clear;">
+                    <a href="#fanta" class="list-item-link"><label for="spin"><img src="img/softdrinks/fanta_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">Fanta</span><br/>Pret: <span class="pret-prod">7</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div>			
+            <div class="list-item-box">
+                <div style="float:clear;">
+                    <a href="#sprite" class="list-item-link"><label for="spin"><img src="img/softdrinks/sprite_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">Sprite</span><br/>Pret: <span class="pret-prod">7</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div> 
+			<div class="list-item-box-last">
+                <div style="float:clear;">
+                    <a href="#nestea" class="list-item-link"><label for="spin"><img src="img/softdrinks/nestea_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">Nestea</span><br/>Pret: <span class="pret-prod">9</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div> 
+
+
+</div>
+
+<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right">
+    <h4>Coffee</h4>
+            <div class="list-item-box">
+                <div style="float:clear;">
+                    <a href="#espresso" class="list-item-link"><label for="spin"><img src="img/coffee/espresso_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">Espresso</span><br/>Pret: <span class="pret-prod">7</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div>
+            <div class="list-item-box">
+                <div style="float:clear;">
+                    <a href="#irish" class="list-item-link"><label for="spin"><img src="img/coffee/irish_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">Irish Coffee</span><br/>Pret: <span class="pret-prod">10</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div>			
+            <div class="list-item-box">
+                <div style="float:clear;">
+                    <a href="#frappe" class="list-item-link"><label for="spin"><img src="img/coffee/frappe_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">Frappe</span><br/>Pret: <span class="pret-prod">9</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div> 
+			<div class="list-item-box-last">
+                <div style="float:clear;">
+                    <a href="#latte" class="list-item-link"><label for="spin"><img src="img/coffee/latte_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">Caffe Latte</span><br/>Pret: <span class="pret-prod">8</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div> 
+
+
+</div>
+
+
+
+<div class="ok-fixed" data-role="footer" data-position="fixed" style="display: block !important; left: 0 !important;right: 0 !important;width: 100% !important;position: fixed !important;z-index: 1000 !important;">
+    <h4> <a href="#five" style="text-decoration:none;"><button style="" id="addDrinks" class="ui-btn ui-icon-shop ui-btn-icon-right ui-shadow ui-corner-all">Adauga bauturile selectate la comanda</button></a></h4>
+</div>
+    </div><!-- /content -->
+
+
+</div><!-- /page five -->
+
+
+
+
+<div data-role="page" id="six">
+
+    <div data-role="header" data-position="" class="header-box"> 
+           <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Mancare</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content" style="padding:1em;">
+
+<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-collapsed="false">
+    <h4>Antreuri</h4>
+            <div class="list-item-box">
+                <div style="float:clear;">
+                    <a href="#croisant" class="list-item-link" style=""><label for="spin"><img src="img/antreuri/croisant_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">Croisant cu ciocolata</span><br/>Pret: <span class="pret-prod">5.50</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div>
+            <div class="list-item-box">
+                <div style="float:clear;">
+                    <a href="#ochiuri" class="list-item-link"><label for="spin"><img src="img/antreuri/ochiuri_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">3 oua ochiuri cu bacon</span><br/>Pret: <span class="pret-prod">12.50</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div>            
+            <div class="list-item-box-last">
+                <div style="float:clear;">
+                    <a href="#omleta" class="list-item-link"><label for="spin"><img src="img/antreuri/omleta_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">Omleta taraneasca</span><br/>Pret: <span class="pret-prod">16.50</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div> 
+				
+</div>
+<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right">
+    <h4>Fel principal</h4>
+            <div class="list-item-box">
+                <div style="float:clear;">
+                    <a href="#shanghai" class="list-item-link"><label for="spin"><img src="img/fel_principal/shanghai_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">Pui Shanghai</span><br/>Pret: <span class="pret-prod">22.50</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div>
+            <div class="list-item-box">
+                <div style="float:clear;">
+                    <a href="#coaste" class="list-item-link"><label for="spin"><img src="img/fel_principal/coaste_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">Coaste de porc</span><br/>Pret: <span class="pret-prod">29.50</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div>			
+            <div class="list-item-box-last">
+                <div style="float:clear;">
+                    <a href="#muschivita" class="list-item-link"><label for="spin"><img src="img/fel_principal/muschivita_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">Muschi de vita la gratar</span><br/>Pret: <span class="pret-prod">42</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div> 
+		
+</div>
+
+<div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right">
+    <h4>Desert</h4>
+            <div class="list-item-box">
+                <div style="float:clear;">
+                    <a href="#cheesecake" class="list-item-link"><label for="spin"><img src="img/desert/cheesecake_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">Cheese Cake</span><br/>Pret: <span class="pret-prod">15</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div>
+            <div class="list-item-box">
+                <div style="float:clear;">
+                    <a href="#papanasi" class="list-item-link"><label for="spin"><img src="img/desert/papanasi_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">Papanasi</span><br/>Pret: <span class="pret-prod">16</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div>			
+            <div class="list-item-box-last">
+                <div style="float:clear;">
+                    <a href="#tort" class="list-item-link"><label for="spin"><img src="img/desert/tort_mini.jpg" style="float:left" height="50" width="50" /> <span class="nume-prod">Tort Inghetata</span><br/>Pret: <span class="pret-prod">19.50</span> Lei</label></a>
+                </div><br/>
+                <div class="list-item-spin"> 
+                    <input type="text" data-role="spinbox" name="spin" id="spin" class="spin-val" data-options='{"type":"horizontal"}' value="0" min="0" max="200" />
+                </div>
+            </div> 
+
+</div>
+
+
+
+<div class="ok-fixed" data-role="footer" data-position="fixed" style="display: block !important; left: 0 !important;right: 0 !important;width: 100% !important;position: fixed !important;z-index: 1000 !important;">
+    <h4> <a href="#five" style="text-decoration:none;"><button id="addFood" style="" class="ui-btn ui-icon-shop ui-btn-icon-right ui-shadow ui-corner-all">Adauga felurile de mancare selectate la comanda</button></a></h4>
+</div>
+    </div><!-- /content -->
+
+
+</div><!-- /page five -->
+
+<div data-role="page" id="five">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+           <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Comanda Ta</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content" style="padding:5px;">
+<style>
+table{
+	border-collapse: collapse;
+	margin-top:-20px;
+}
+
+th,td {
+    border-bottom: 1px solid #d6d6d6;
+	vertical-align: middle;
+	line-height:3.5em;
+	padding:5px;
+	
+}
+
+tr:nth-child(even) {
+    background: #e9e9e9;	
+}
+
+th,td {
+	min-width:1em;
+}
+
+td {
+	text-align:center;
+}
+
+.td-col{
+	text-align:left;
+}
+</style>
+<table  width="100%">
+  <thead>
+    <tr style="background-color:#EEE;">
+      <th data-priority="1" width="55%">Produs</th>
+      <th data-priority="2" width="15%">Cant</th>
+      <th data-priority="3" width="15%">PU</th>
+      <th data-priority="4" width="15%">PT</th>
+    </tr>
+ 
+  </thead>
+  <tbody class="add-comenzi">
+
+	<tr style="line-height:4em; font-size:1.5em;">
+		<th colspan="2">Total</th>
+		<th colspan="2"><span class="pret-total">0</spam> LEI</th>
+	</tr>
+    
+  </tbody>
+</table>     
+<p><a href="#trimite-comanda" class="ui-btn ui-shadow ui-corner-all" data-rel="dialog" data-transition="pop">Trimite comanda</a></p>
+<p><a href="#" id="resetBill" class="ui-btn ui-shadow ui-corner-all">Sterge Toate Produsele Din Comanda</a></p>
+
+
+    </div><!-- /content -->
+
+
+</div><!-- /page five -->
+
+<!-- Start of first page: #six -->
+<div data-role="page" id="cola">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+          <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Coca Cola</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/softdrinks/cola_max.jpg); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>Coca Cola</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 7 Lei</p>
+			<p>Ingredinete: Apa, colorant, zahar, cafeina, dioxid de carbon</p>
+		</div>
+            
+    </div><!-- /content -->
+
+
+</div><!-- /page tree -->
+
+<!-- Start of first page: #six -->
+<div data-role="page" id="fanta">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Fanta</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/softdrinks/fanta_max.jpg); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>Fanta</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 7 Lei</p>
+			<p>Ingredinete: Apa, zahar, suc de portocale, dioxid de carbon, acidifiant acid citric, arome naturale de portocale cu alte arome naturale</p>
+		</div>
+            
+    </div><!-- /content -->
+
+
+</div><!-- /page tree -->
+
+<!-- Start of first page: #six -->
+<div data-role="page" id="sprite">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Sprite</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/softdrinks/sprite_max.jpg); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>Sprite</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 7 Lei</p>
+			<p>Ingredinete: Apa, Sirop de glucoza - fructoza, Dioxid de carbon, ACID CITRIC, Benzoat de sodiu, CITRAT DE SODIU/ E331, AROMA DE LAMAIE VERDE (LIME), Aroma de lamaie</p>
+		</div>
+            
+    </div><!-- /content -->
+
+
+</div><!-- /page tree -->
+
+<!-- Start of first page: #six -->
+<div data-role="page" id="nestea">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Nestea</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/softdrinks/nestea_max.jpg); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>Nestea</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 9 Lei</p>
+			<p>Ingredinete: Zahar, EXTRACT DE CEAI, ACID CITRIC, GUMA ARABICA (GUMA DE ACACIA), ASPARTAM, ACID ASCORBIC\ VITAMINA C, Arome, DIOXID DE SILICIU</p>
+		</div>
+            
+    </div><!-- /content -->
+
+
+</div><!-- /page tree -->
+
+
+<!-- Start of first page: #six -->
+<div data-role="page" id="ursus">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Ursus Premium</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/beer/ursus_max.png); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>Ursus Premium</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 6 Lei</p>
+			<p>Ingredinete: apa,malt,hamei,drojdie</p>
+		</div>
+            
+    </div><!-- /content -->
+
+	</div>
+<!-- Start of first page: #six -->
+<div data-role="page" id="stela">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Stela Artois</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/beer/stela_max.jpg); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>Stela Artois</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 9 Lei</p>
+			<p>Ingredinete: apa,malt,hamei,drojdie</p>
+		</div>
+            
+    </div><!-- /content -->
+</div>
+<!-- Start of first page: #six -->
+<div data-role="page" id="timisoreana">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Timisoreana</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/beer/timisoreana_max.jpg); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>Timisoreana</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 5 Lei</p>
+			<p>Ingredinete: apa,malt,hamei,drojdie</p>
+		</div>
+            
+    </div><!-- /content -->
+	
+	</div>
+<!-- Start of first page: #six -->
+<div data-role="page" id="heineken">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Heineken</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/beer/heineken_max.jpg); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>Heineken</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 9 Lei</p>
+			<p>Ingredinete: apa,malt,hamei,drojdie</p>
+		</div>
+            
+    </div><!-- /content -->
+
+
+</div><!-- /page tree -->
+
+<!-- Start of first page: #six -->
+<div data-role="page" id="espresso">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Espresso</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/coffee/espresso_max.jpg); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>Espresso</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 7 Lei</p>
+			<p>Ingredinete: cafea, apa, lapte, zahar</p>
+		</div>
+            
+    </div><!-- /content -->
+
+
+</div><!-- /page tree -->
+<div data-role="page" id="irish">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Irish Coffee</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/coffee/irish_max.jpg); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>Irish Coffee</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 10 Lei</p>
+			<p>Ingredinete: 20 ml Irish Whiskey, 7g cafea, frisca lichida</p>
+		</div>
+            
+    </div><!-- /content -->
+
+
+</div><!-- /page tree -->
+<div data-role="page" id="frappe">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Frappe</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/coffee/frappe_max.jpg); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>Frappe</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 9 Lei</p>
+			<p>Ingredinete: 2 lingurite ness cafe - 100 ml, lapte, zahar, inghetata de vanilie, cuburi de gheata, frisca</p>
+		</div>
+            
+    </div><!-- /content -->
+
+
+</div><!-- /page tree -->
+<div data-role="page" id="latte">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Caffe Latte</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/coffee/latte_max.jpg); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>Caffe Latte</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 8 Lei</p>
+			<p>Ingredinete: espresso, lapte spumant, sirop de aromatizare</p>
+		</div>
+            
+    </div><!-- /content -->
+
+
+</div><!-- /page tree -->
+
+
+
+<div data-role="page" id="croisant">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Croisant cu ciocolata</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/antreuri/croisant_max.jpg); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>Croisant cu ciocolata</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 5.50 Lei</p>
+			<p>Ingredinete: faina, unt, drojdie, lapte, zahar, oua, ciocolata </p>
+		</div>
+            
+    </div><!-- /content -->
+
+
+</div><!-- /page tree -->
+<div data-role="page" id="ochiuri">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>3 oua ochiuri cu bacon</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/antreuri/ochiuri_max.jpg); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>3 oua ochiuri cu bacon</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 12.50 Lei</p>
+			<p>Ingredinete: oua, bacon, sare </p>
+		</div>
+            
+    </div><!-- /content -->
+
+
+</div><!-- /page tree -->
+<div data-role="page" id="omleta">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Omleta taraneasca</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/antreuri/omleta_max.jpg); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>Omleta taraneasca</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 16.50 Lei</p>
+			<p>Ingredinete: oua, bacon, branza, ceapa, ardei gras, ciuperci </p>
+		</div>
+            
+    </div><!-- /content -->
+
+
+</div><!-- /page tree -->
+<div data-role="page" id="shanghai">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Pui Shanghai</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/fel_principal/shanghai_max.jpg); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>Pui Shanghai</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 22.50 Lei</p>
+			<p>Ingredinete: oua, sos soia, sare, piper, faina, marar, susan, piept de pui </p>
+		</div>
+            
+    </div><!-- /content -->
+
+
+</div><!-- /page tree -->
+<div data-role="page" id="coaste">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Coaste de porc</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/fel_principal/coaste_max.jpg); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>Coaste de porc</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 29.50 Lei</p>
+			<p>Ingredinete: coaste de porc, usturoi, cimbru, boia, sare, piper </p>
+		</div>
+            
+    </div><!-- /content -->
+
+
+</div><!-- /page tree -->
+<div data-role="page" id="muschivita">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Muschi de vita la gratar</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/fel_principal/muschivita_max.jpg); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>Muschi de vita la gratar</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 42 Lei</p>
+			<p>Ingredinete: muschi de vita, sare, piper, cimbru, usturoi, ciuperci </p>
+		</div>
+            
+    </div><!-- /content -->
+
+
+</div><!-- /page tree -->
+<div data-role="page" id="cheesecake">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Cheese Cake</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/desert/cheesecake_max.jpg); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>Cheese Cake</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 15 Lei</p>
+			<p>Ingredinete: oua, branza, biscuiti digestivi, unt, frisca, zahar </p>
+		</div>
+            
+    </div><!-- /content -->
+
+
+</div><!-- /page tree -->
+<div data-role="page" id="papanasi">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Papanasi cu dulceata si smantana</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/desert/papanasi_max.jpg); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>Papanasi cu dulceata si smantana</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 16.50 Lei</p>
+			<p>Ingredinete: branza de vaca, zahar, oua, faina, sare, smantana, dulceata </p>
+		</div>
+            
+    </div><!-- /content -->
+
+
+</div><!-- /page tree -->
+<div data-role="page" id="tort">
+
+    <div data-role="header" data-position="fixed" class="header-box"> 
+            <a href="/" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-corner-all" data-rel="back">Back</a>
+            <h1>Tort de inghetata</h1>
+            <a href="#two" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a> 
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="section-box" style="background-image:url(img/desert/tort_max.jpg); height:200px;"></div>
+		<div style="padding:10px;margin-top:10px;">
+			<h2>Tort de inghetata</h2>
+			<p>Rating: 5/5</p>
+			<p>Pret: 19.50 Lei</p>
+			<p>Ingredinete: fructe tropicale, zahar pudra vanilat, frisca, lichior de banane, inghetata, ciocolata </p>
+		</div>
+            
+    </div><!-- /content -->
+
+
+</div><!-- /page tree -->
+
+
+
+<!-- Start of third page: #popup -->
+<div data-role="page" data-close-btn="none" id="trimite-comanda">
+
+	<div data-role="header">
+		<h1>Confirma</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content" style="padding:10px; text-align:center;">
+		
+		<p>Esti sigur ca vrei sa trimiti comanda?</p>
+		<p><a href="#two" id="csend" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-check ui-btn-icon-left">Da</a><a href="" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-delete ui-btn-icon-left">Nu</a></p>
+	</div><!-- /content -->
+</div>
+<div data-role="page" data-close-btn="none" id="cndp">
+
+    <div data-role="header">
+        <h1>Confirma</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content" style="padding:10px; text-align:center;">
+        
+        <p>Doresti sa soliciti nota de plata?</p>
+        <p><a href="#metodaplata" id="nsend"  class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-check ui-btn-icon-left" data-rel="dialog" data-transition="pop">Da</a><a href="" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-delete ui-btn-icon-left">Nu</a></p>
+    </div><!-- /content -->
+</div>
+<div data-role="page" data-close-btn="none" id="metodaplata">
+
+    <div data-role="header">
+        <h1>Metoda plata</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content" style="padding:10px; text-align:center;">
+        
+        <p>Va rugam selectati metoda de plata:</p>
+        <p><a href="#two"  class="ui-btn ui-shadow ui-corner-all ui-btn-inline">Cash</a>
+		   <a href="#two"  class="ui-btn ui-shadow ui-corner-all ui-btn-inline">Card</a></p>
+    </div><!-- /content -->
+</div>
+<div data-role="page"  data-close-btn="none"  id="chelner">
+
+    <div data-role="header">
+        <h1>Cheama un ospatar</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content" style="padding:10px; text-align:center;">
+        
+        <p>Un ospatar va ajunge la dumneavoastra in cel mai scurt timp.</p>
+        <p><a href="#two" id="wsend" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Inapoi</a></p>
+    </div><!-- /content -->
+
+
+</div><!-- /page popup -->
+
+        
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+        <script src="http://dev.jtsage.com/cdn/spinbox/latest/jqm-spinbox.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/functions.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+		      setTimeout(function(){ 
+                $('#loader').live('pagebeforeshow',function(event, ui){
+                    $.mobile.navigate( "#one" );
+                });
+                $.mobile.navigate( "#one" ); }, 2000);
+
+ 			$( document ).ready(function(){
+                
+                
+                var pwidth = $( window ).width();
+                var pheight = $( window ).height();
+                if (pwidth > pheight) pheight=pwidth;
+				$(".no-header").height(pheight);
+				$('div').live('pagehide',function(event, ui){
+					var height = pheight - $(".header-box").height()-2;
+					$(".ok-content").height(height);
+                    $(".ok-fixed").removeClass("slideup");
+				});
+
+
+			});
+
+        </script>
+    </body>
+</html>

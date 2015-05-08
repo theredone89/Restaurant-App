@@ -6,10 +6,23 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		C275D43E1AFCFC2A00F864CC /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
+		C275D43F1AFCFC2A00F864CC /* hooks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = hooks; sourceTree = "<group>"; };
+		C275D4401AFCFC2A00F864CC /* platforms */ = {isa = PBXFileReference; lastKnownFileType = folder; path = platforms; sourceTree = "<group>"; };
+		C275D4411AFCFC2A00F864CC /* plugins */ = {isa = PBXFileReference; lastKnownFileType = folder; path = plugins; sourceTree = "<group>"; };
+		C275D4421AFCFC2A00F864CC /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		C20C66051AFCFBB900C39ECD = {
 			isa = PBXGroup;
 			children = (
+				C275D43E1AFCFC2A00F864CC /* config.xml */,
+				C275D43F1AFCFC2A00F864CC /* hooks */,
+				C275D4401AFCFC2A00F864CC /* platforms */,
+				C275D4411AFCFC2A00F864CC /* plugins */,
+				C275D4421AFCFC2A00F864CC /* www */,
 			);
 			sourceTree = "<group>";
 		};

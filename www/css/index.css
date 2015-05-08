@@ -1,0 +1,109 @@
+
+.ui-content{
+    padding: 0px;
+
+}
+.section-box{
+    height: 50%;
+    background-position: bottom;
+    background-size: cover;
+}
+
+input{
+
+    width: 70%;
+}
+
+.ok-content{
+	overflow:hidden !important;
+}
+
+.ui-icon-facebook:after {
+
+      background-position: 7px!important;
+}
+
+.square-box{
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    
+}
+.square-box:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.square-content{
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+ background: #fff;
+ border-radius: 3px;
+ margin: 5px;
+ opacity: 0.8;
+color: #000000;
+}
+.square-content div {
+   display: table;
+   width: 100%;
+   height: 100%;
+
+}
+.square-content span {
+   
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+
+}
+
+.ui-field-contain>label, .ui-field-contain .ui-controlgroup-label, .ui-field-contain>.ui-rangeslider>label{
+
+    width: 60%;
+}
+
+.ui-field-contain>label~[class*=ui-], .ui-field-contain .ui-controlgroup-controls {
+
+    width: auto;
+}
+
+#four .ui-icon-plus:after, #six .ui-icon-plus:after {
+    background-position: 75%;
+}    
+#four .ui-icon-minus:after, #six .ui-icon-minus:after {
+    background-position: 75%;
+}   
+
+.list-item-box{
+    height: 8em;
+    border-bottom:1px solid lightgray;
+    padding:10px;
+    margin-top: 10px;
+}
+
+.list-item-box-last{
+    height: 8em;
+    padding:10px;
+    margin-top: 10px;    
+}
+
+.list-item-link{
+text-decoration:none !important;
+text-align:right !important;
+line-height:1.5em !important;
+}
+
+.list-item-spin{
+    position:relative;
+    float:clear;left:50%;
+    margin-left:-5em; 
+    margin-top:-0.5em;
+}
+
+.ui-input-text input, .ui-input-search input {
+	  min-height: 2.25em !important;
+}
