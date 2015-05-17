@@ -3,9 +3,6 @@
 var comanda = Array();
 var index = 0;
 
-var networkState = navigator.connection.type;
- 
-
 
 function getComenzi(meniuid){
 
