@@ -972,11 +972,15 @@ td {
                 $.mobile.navigate( "#one" ); }, 2000);
 
  			$( document ).ready(function(){
-                
-                if (checkConnection() == "none" ) {
+
+   if (networkState == Connection.NONE){
                         alert("Verificati conexiunea la internet");
                         $.mobile.navigate( "#no-connection" );
-                    } 
+
+    }
+                
+
+                    
 
                 var pwidth = $( window ).width();
                 var pheight = $( window ).height();
