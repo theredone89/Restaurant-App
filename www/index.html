@@ -6,8 +6,8 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
-        <link rel="stylesheet" href="http://andymatthews.net/code/jquery-mobile-icon-pack/dist/jqm-icon-pack-fa.css"/>
+        <link rel="stylesheet" href="css/jquery.mobile.min.css">
+        <link rel="stylesheet" href="css/jqm-icon-pack-fa.css"/>
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Restaurat Application</title>
     </head>
@@ -65,7 +65,9 @@
 
 
 </div>
+<!-- new -->
 
+<div id="no-connection" data-role="page" style="overflow:hidden;"><div ole="main" style="overflow:hidden; background-color:white;color:gray;text-align:center;"><br/><br/>No available connection</div></div>
 
 <!-- Start of first page: #one -->
 <div data-role="page" id="one">
@@ -955,10 +957,10 @@ td {
 </div><!-- /page popup -->
 
         
-        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
-        <script src="http://dev.jtsage.com/cdn/spinbox/latest/jqm-spinbox.min.js"></script>
-        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/jquery-1.7.1.min.js"></script>
+        <script src="js/jquery.mobile.min.js"></script>
+        <script src="js/jqm-spinbox.min.js"></script>
+        <!-- <script type="text/javascript" src="cordova.js"></script> -->
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/functions.js"></script>
         <script type="text/javascript">
@@ -971,7 +973,11 @@ td {
 
  			$( document ).ready(function(){
                 
-                
+                if (checkConnection() == "none" ) {
+                        alert("Verificati conexiunea la internet");
+                        $.mobile.navigate( "#no-connection" );
+                    } 
+
                 var pwidth = $( window ).width();
                 var pheight = $( window ).height();
                 if (pwidth > pheight) pheight=pwidth;
